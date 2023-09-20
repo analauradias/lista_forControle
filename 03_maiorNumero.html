@@ -7,11 +7,13 @@
     */
 
     //ENTRADA
-
-    
+    let numeros = 5;
+    let todosNumeros = [];
     //PROCESSAMENTO
-
-    
+    for (let index = 1; index <= numeros; index++) {
+        todosNumeros.push(Number(prompt(`Insira um número`)))        
+    }
+    todosNumeros.sort((a, b) => b-a);    
     //SAÍDA
-
+    document.write(todosNumeros[0]);
 </script>

@@ -9,13 +9,12 @@
     //ENTRADA
     const qtdNotas = Number(prompt(`Quantas notas o aluno obteve?`));
 
-    let todasAsNotas = [];
-    //PROCESSAMENTO
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        
-    }
+    let somaNotas = 0;
 
-    //SAÍDA
+   for (let index = 1; index <= qtdNotas; index++) {
+    const nota = Number(prompt(`Informe a nota do aluno:`));
+    somaNotas = somaNotas + nota;    
+   }
 
+   alert(`Média: ${somaNotas/qtdNotas}`);
 </script>
