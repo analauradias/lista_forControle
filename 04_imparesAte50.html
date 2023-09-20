@@ -7,10 +7,15 @@
 
     //ENTRADA
 
-
+    let impares = [];
     //PROCESSAMENTO
-
+    for (let index = 1; index <= 50; index++) {
+        if((index % 2 == 0) == false){
+            impares.push(index)
+        }
+           
+    }
 
     //SAÍDA
-
+    document.write(impares.join(", "))
 </script>
