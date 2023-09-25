@@ -8,20 +8,29 @@
     //ENTRADA
     let inicial = Number(`Insira o número inicial`);
     let final = Number(`Insira o número final`);
-    
+
+    let pares = [];
+    let impares = [];
     //PROCESSAMENTO
-    if () {
-        
+    if (inicial > final || inicial == final) {
+        alert(`ERRO!`)
     } else {
-        
+        for (let index = inicial + 1; index < final; index++) {
+            if(index%2==0){
+                pares.push(index);
+            }
+            else{
+                impares.push(index)
+            }
+
+        }
+        alert(`Os números pares entre ${inicial} e ${final}: ${pares.join(", ")}. Os números ímpares entre ${inicial} e ${final}: ${impares.join(", ")} `)
     }
 
 
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        
-    }
-    
+
+
+
     //SAÍDA
 
 </script>
