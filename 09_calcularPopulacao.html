@@ -6,10 +6,15 @@
     */
 
     //ENTRADA
+    let popInicial = 50000;
 
-    
     //PROCESSAMENTO
-    
+    for (let anos = 1; anos <= 10; anos++) {
+        popInicial = popInicial * 1.015;
+        
+        (anos == 5)? document.write(`População prevista para 5 anos: ${popInicial.toFixed(0)}<br>`) :  anos = anos;
+        (anos == 10)? document.write(`População prevista para 10 anos: ${popInicial.toFixed(0)}`) : anos = anos;
+    }
 
     //SAÍDA
 

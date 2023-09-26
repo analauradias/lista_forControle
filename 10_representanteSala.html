@@ -8,11 +8,27 @@
     */
 
     //ENTRADA
-    
+    const candidato1 = prompt(`Insira o nome do(a) primeiro(a) candidato(a)`);
+    const candidato2 = prompt(`Insira o nome do(a) segundo(a) candidato(a)`);
+    const candidato3 = prompt(`Insira o nome do(a) terceiro(a) candidato(a)`);
+    const votantes = Number(prompt(`Insira  quantidade de alunos que votaram`));
 
+    let represent1 = [];
+    let represent2 = [];
+    let represent3 = [];
     //PROCESSAMENTO
-
+    for (let index = 1; index <= votantes; index++) {
+        const votoPorAluno = Number(prompt(`Digite para votar: 1-${candidato1}, 2-${candidato2} ou 3-${candidato3}`)) 
+        
+        if(votoPorAluno == 1){
+            represent1.push(votoPorAluno);
+        } else if (votoPorAluno == 2){
+            represent2.push(votoPorAluno);
+        } else{
+            represent3.push(votoPorAluno);
+        }
+    }
 
     //SAÍDA
-
+    document.write(`Quantidade de votos: <br> ${candidato1} = ${represent1.length} <br> ${candidato2} = ${represent2.length} <br> ${candidato3} = ${represent3.length} <br> Porcentagem de votos de cada candidato: <br> ${candidato1} = ${((represent1.length/votantes)*100)}% <br> ${candidato2} = ${((represent2.length/votantes)*100)}% <br> ${candidato3} = ${((represent3.length/votantes)*100)}%`)
 </script>

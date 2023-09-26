@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
+    let popInicial = 80000;
+    let popFinal = 200000;
+    let anos = 1;
     
     //PROCESSAMENTO
-
+    for (anos = 1; popInicial <= popFinal; anos++) {
+        popInicial = popInicial + (popInicial * 0.03);
+    }
     
     //SAÍDA
-
+    alert(`Serão necessários ${anos} anos para atingir 200 mil habitantes! Número de habitantes após ${anos} será de ${popInicial.toFixed(0)}`);
 </script>
