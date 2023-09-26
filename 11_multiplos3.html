@@ -5,10 +5,22 @@
     */
 
     //ENTRADA
+    let soma = 0;
+    let multiplos = [];
 
+    for (let index = 1; index <= 100; index++) {
+        if((index%3 == 0) === true){
+            soma += index;
+            multiplos.push(index);
+        }
+        else{
+            index = index;
+        }
+        
+    }
 
     //PROCESSAMENTO
-
+    document.write(`Multiplos: ${multiplos}<br> Soma: ${soma} `)
 
     //SAÍDA
 
